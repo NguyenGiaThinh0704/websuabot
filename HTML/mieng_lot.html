@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../FAVICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="../FAVICON/site.webmanifest">
+    <title>Miếng lót</title>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/css.css" />
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/js.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top border-bottom bg-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3 px-4">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          ☰
+        </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../IMAGE/logo.png" alt="Logo" class="logo" height="50" />
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="gia_uu_dai.html">GIÁ ƯU ĐÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot.html">SỮA BỘT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="suabot_sh.html">SỮA BỘT SINH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot_nk.html">SỮA BỘT NHẬP KHẨU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot_ps.html">SỮA BỘT PHA SẴN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="san_pham_ban_chay.html">SẢN PHẨM BÁN CHẠY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu">PHỤ
+                                KIỆN</a>
+                            <div id="submenu" class="collapse">
+                                <a class="nav-link" href="Binh_sua.html">Bình sữa</a>
+                                <a class="nav-link" href="tingam_tigia.html">Ti ngậm - ti giả</a>
+                                <a class="nav-link" href="khan_uot.html">Khăn ướt</a>
+                                <a class="nav-link" href="mieng_lot.html">Miếng Lót</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light w-100 d-none d-lg-block">
+                <div class="container-fluid">
+                    <ul class="navbar-nav d-flex flex-row justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="gia_uu_dai.html">GIÁ ƯU ĐÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="sua_bot.html">SỮA BỘT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="suabot_sh.html">SỮA BỘT SINH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="sua_bot_nk.html">SỮA BỘT NHẬP KHẨU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="sua_bot_ps.html">SỮA BỘT PHA SẴN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="san_pham_ban_chay.html">SẢN PHẨM BÁN CHẠY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-3" href="#" data-bs-toggle="dropdown">PHỤ KIỆN</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Binh_sua.html">Bình sữa</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="tingam_tigia.html">Ti ngậm - ti giả</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="khan_uot.html">Khăn ướt</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mieng_lot.html">Miếng lót</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="d-flex align-items-center">
+
+                <input class="form-control me-2 w-100 w-sm-100" placeholder="Tìm kiếm" type="text" />
+                <input class="form-control me-2 w-100 d-block d-sm-none" placeholder="Tìm kiếm" type="text" />
+                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                <a href="dang_nhap.html" class="text-dark ms-2"><i class="fas fa-user"></i></a>
+                <a href="danh_sach_dang_ky.html" class="text-dark ms-2"><i class="fas fa-users"></i></a>
+                <a href="#" class="text-dark ms-2" id="cart-toggle"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5" style="margin-top: 80px">>
+        <!-- Modal hiển thị chi tiết sản phẩm -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title w-100 text-center" id="productModalLabel">
+                            Thông tin sản phẩm
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="productModalBody">
+                        <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center mb-4">
+            <hr class="flex-grow-1 mx-3" />
+            <h2 class="text-center fw-bold fade-in">MIẾNG LÓT</h2>
+            <hr class="flex-grow-1 mx-3" />
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-filter"></i>
+                <span class="ms-2">BỘ LỌC</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="me-2">Sắp xếp theo:</span>
+                <select class="form-select w-auto">
+          <option value="default">Chọn tiêu chí</option>
+          <option value="price-asc">Giá thấp đến cao</option>
+          <option value="price-desc">Giá cao đến thấp</option>
+          <option value="name-asc">Tên A → Z</option>
+          <option value="name-desc">Tên Z → A</option>
+          <option value="newest">Mới nhất</option>
+          <option value="bestseller">Bán chạy nhất</option>
+          <option value="discount">Giảm giá nhiều nhất</option>
+        </select>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Sản phẩm 1 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/1.webp" alt="1" data-name="Bobby Newborn 2" data-price="112000" data-description="Miếng lót Bobby Newborn 2 60 miếng có bề mặt được lụa hóa, êm mềm, hút thấm một chiều, không thấm ngược trở lại, giúp bề mặt luôn khô thoáng, sạch sẽ. Công nghệ siêu thấm cùng lớp thấm nhanh siêu tốc mang đến cho bé sơ sinh cảm giác khô thoáng để bé ngủ ngoan, chơi ngoan cả ngày. Miếng lót Bobby Newborn 2 sẽ là một lựa chọn hoàn hảo của mẹ cho bé trong những năm tháng đầu đời, giúp bảo vệ bé tốt nhất."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót Bobby Newborn 2 - 60 miếng1</p>
+                <p class="fw-bold">112,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/2.webp" alt="1" data-name="Bobby Newborn 2" data-price="78000" data-description="Miếng lót Bobby Newborn 2 60 miếng có bề mặt được lụa hóa, êm mềm, hút thấm một chiều, không thấm ngược trở lại, giúp bề mặt luôn khô thoáng, sạch sẽ. Công nghệ siêu thấm cùng lớp thấm nhanh siêu tốc mang đến cho bé sơ sinh cảm giác khô thoáng để bé ngủ ngoan, chơi ngoan cả ngày. Miếng lót Bobby Newborn 2 sẽ là một lựa chọn hoàn hảo của mẹ cho bé trong những năm tháng đầu đời, giúp bảo vệ bé tốt nhất."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót Bobby Newborn 2 - 40 miếng1</p>
+                <p class="fw-bold">78,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/3.webp" alt="1" data-name="Bobby Newborn 2" data-price="82000" data-description="Miếng lót Bobby Newborn 2 60 miếng có bề mặt được lụa hóa, êm mềm, hút thấm một chiều, không thấm ngược trở lại, giúp bề mặt luôn khô thoáng, sạch sẽ. Công nghệ siêu thấm cùng lớp thấm nhanh siêu tốc mang đến cho bé sơ sinh cảm giác khô thoáng để bé ngủ ngoan, chơi ngoan cả ngày. Miếng lót Bobby Newborn 2 sẽ là một lựa chọn hoàn hảo của mẹ cho bé trong những năm tháng đầu đời, giúp bảo vệ bé tốt nhất."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót Bobby Newborn 2 - 64 miếng1</p>
+                <p class="fw-bold">82,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/4.webp" alt="1" data-name="Bobby Newborn 2" data-price="64000" data-description="Miếng lót Bobby Newborn 2 60 miếng có bề mặt được lụa hóa, êm mềm, hút thấm một chiều, không thấm ngược trở lại, giúp bề mặt luôn khô thoáng, sạch sẽ. Công nghệ siêu thấm cùng lớp thấm nhanh siêu tốc mang đến cho bé sơ sinh cảm giác khô thoáng để bé ngủ ngoan, chơi ngoan cả ngày. Miếng lót Bobby Newborn 2 sẽ là một lựa chọn hoàn hảo của mẹ cho bé trong những năm tháng đầu đời, giúp bảo vệ bé tốt nhất."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót Bobby Newborn 2 - 28 miếng1</p>
+                <p class="fw-bold">64,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 5 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/5.webp" alt="1" data-name="Bobby Newborn 2" data-price="132000" data-description="Miếng lót Bobby Newborn 2 60 miếng có bề mặt được lụa hóa, êm mềm, hút thấm một chiều, không thấm ngược trở lại, giúp bề mặt luôn khô thoáng, sạch sẽ. Công nghệ siêu thấm cùng lớp thấm nhanh siêu tốc mang đến cho bé sơ sinh cảm giác khô thoáng để bé ngủ ngoan, chơi ngoan cả ngày. Miếng lót Bobby Newborn 2 sẽ là một lựa chọn hoàn hảo của mẹ cho bé trong những năm tháng đầu đời, giúp bảo vệ bé tốt nhất."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót Bobby Newborn 2 - 108 miếng1</p>
+                <p class="fw-bold">132,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/7.webp" alt="2" data-name="Huggies Dry NB2" data-price="61000" data-description="Miếng lót sơ sinh Huggies Dry NB2 - 40 miếng là sản phẩm tã bỉm đến từ thương hiệu chăm sóc bé hàng đầu thế giới Huggies, tã bỉm Huggies mang tới độ thấm hút cực tốt, giữ cho bé luôn khô thoáng dài lâu, các bà mẹ ưa chuộng. Miếng lót sơ sinh Huggies Dry size NB2 (cho bé từ 4 - 7kg) với chiết xuất lô hội và vitamin E, thấm hút cực tốt, ..."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót sơ sinh Huggies Dry NB2 - 40 miếng</p>
+                <p class="fw-bold">61,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/8.webp" alt="2" data-name="Huggies Dry NB2" data-price="107000" data-description="Miếng lót sơ sinh Huggies Dry NB2 - 40 miếng là sản phẩm tã bỉm đến từ thương hiệu chăm sóc bé hàng đầu thế giới Huggies, tã bỉm Huggies mang tới độ thấm hút cực tốt, giữ cho bé luôn khô thoáng dài lâu, các bà mẹ ưa chuộng. Miếng lót sơ sinh Huggies Dry size NB2 (cho bé từ 4 - 7kg) với chiết xuất lô hội và vitamin E, thấm hút cực tốt, ..."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót sơ sinh Huggies Dry NB2 - 100 miếng</p>
+                <p class="fw-bold">107,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 8 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/mienglot/6.webp" alt="2" data-name="Huggies Dry NB2" data-price="70000" data-description="Miếng lót sơ sinh Huggies Dry NB2 - 40 miếng là sản phẩm tã bỉm đến từ thương hiệu chăm sóc bé hàng đầu thế giới Huggies, tã bỉm Huggies mang tới độ thấm hút cực tốt, giữ cho bé luôn khô thoáng dài lâu, các bà mẹ ưa chuộng. Miếng lót sơ sinh Huggies Dry size NB2 (cho bé từ 4 - 7kg) với chiết xuất lô hội và vitamin E, thấm hút cực tốt, ..."
+                    height="295px" width="295px" />
+                <p class="mt-2">Miếng lót sơ sinh Huggies Dry NB2 - 56 miếng</p>
+                <p class="fw-bold">70,000 đ</p>
+            </div>
+    </main>
+
+    <!-- Giỏ hàng -->
+    <div class="cart" id="cart">
+        <div class="cart-header pt-2">
+            <h5>Giỏ Hàng</h5>
+            <button class="btn-close" id="cart-close"></button>
+        </div>
+        <div class="cart-body" id="cart-body">
+            <p class="cart-empty pt-2">Giỏ hàng của bạn trống.</p>
+        </div>
+        <div class="cart-footer">
+            <strong>Tổng: <span id="cart-total">0</span> đ</strong>
+            <button class="btn btn-primary float-end" id="checkout-btn">
+        Thanh toán
+      </button>
+        </div>
+    </div>
+
+    <footer class="bg-danger text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="fw-bold">The Gioi Sua</h3>
+                    <p>
+                        <strong>The Gioi Sua</strong> là thương hiệu sữa bột hàng đầu tại Việt Nam, chuyên cung cấp các sản phẩm sữa bột chất lượng cao cho trẻ em và người lớn. Chúng tôi cam kết mang đến những sản phẩm tốt nhất với giá cả hợp lý nhất.
+                    </p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP.HCM</p>
+                    <p><i class="fas fa-phone me-2"></i> 0839 666 888</p>
+                    <p><i class="fas fa-envelope me-2"></i> support@thegioisua.vn</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Hỗ Trợ Khách Hàng</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="#"><i class="fas fa-shield-alt me-2"></i> Chính sách bảo
+                              hành</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-exchange-alt me-2"></i> Chính sách đổi
+                              trả</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-shipping-fast me-2"></i> Chính sách vận
+                              chuyển</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-question-circle me-2"></i> Câu hỏi thường
+                              gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Kết Nối Với Chúng Tôi</h3>
+                    <div class="d-flex">
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white fs-4" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top pt-2 text-center">
+                <p class="mb-0 fst-italic">© 2025 The Gioi Sua. All rights reserved. | Thiết kế bởi Nguyễn Gia Thịnh 23677911 - Bài Tập Lớn Hệ thống Công nghệ Web
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal thông báo -->
+    <div class="modal fade" id="cartNotification" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                    <h4>Thêm vào giỏ hàng thành công!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal thông báo giỏ hàng trống -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Thông báo</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Chưa có sản phẩm trong giỏ hàng!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thêm sau modal cảnh báo -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                    <h4 class="text-success mb-3">Thanh toán thành công!</h4>
+                    <p>Cảm ơn bạn đã mua hàng tại The Gioi Sua</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Trong phần modal thanh toán -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác nhận đơn hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Thông tin sản phẩm:</h6>
+                            <div id="checkout-items"></div>
+                            <hr>
+                            <h6>Tổng cộng: <span id="checkout-total">0</span> đ</h6>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h6>Thông tin thanh toán:</h6>
+                            <form id="paymentForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Họ tên</label>
+                                    <input type="text" class="form-control" id="checkoutFullname" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="checkoutAddress" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Số điện thoại</label>
+                                    <input type="tel" class="form-control" id="checkoutPhone" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Phương thức thanh toán</label>
+                                    <select class="form-select" id="checkoutPayment" required>
+                                        <option value="">Chọn phương thức</option>
+                                        <option>COD</option>
+                                        <option>Chuyển khoản</option>
+                                        <option>Ví điện tử</option>
+                                    </select>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" form="paymentForm">Xác nhận thanh toán</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

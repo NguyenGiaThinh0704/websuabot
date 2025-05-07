@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="apple-touch-icon" sizes="180x180" href="FAVICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="FAVICON/site.webmanifest">
+    <title>The Gioi Sua - Trang Chủ</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/css.css">
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/js.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top border-bottom bg-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3 px-4">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    ☰
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="IMAGE/logo.png" alt="Logo" class="logo" height="50" />
+                </a>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="gia_uu_dai.html">GIÁ ƯU ĐÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot.html">SỮA BỘT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="suabot_sh.html">SỮA BỘT SINH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot_nk.html">SỮA BỘT NHẬP KHẨU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot_ps.html">SỮA BỘT PHA SẴN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="san_pham_ban_chay.html">SẢN PHẨM BÁN CHẠY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu">PHỤ
+                                KIỆN</a>
+                            <div id="submenu" class="collapse">
+                                <a class="nav-link" href="Binh_sua.html">Bình sữa</a>
+                                <a class="nav-link" href="tingam_tigia.html">Ti ngậm - ti giả</a>
+                                <a class="nav-link" href="khan_uot.html">Khăn ướt</a>
+                                <a class="nav-link" href="mieng_lot.html">Miếng Lót</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light w-100 d-none d-lg-block">
+                <div class="container-fluid">
+                    <ul class="navbar-nav d-flex flex-row justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="HTML/gia_uu_dai.html">GIÁ ƯU ĐÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="HTML/sua_bot.html">SỮA BỘT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="HTML/suabot_sh.html">SỮA BỘT SINH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="HTML/sua_bot_nk.html">SỮA BỘT NHẬP KHẨU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="HTML/sua_bot_ps.html">SỮA BỘT PHA SẴN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="HTML/san_pham_ban_chay.html">SẢN PHẨM BÁN CHẠY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-3" href="#" data-bs-toggle="dropdown">PHỤ KIỆN</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="HTML/Binh_sua.html">Bình sữa</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="HTML/tingam_tigia.html">Ti ngậm - ti giả</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="HTML/khan_uot.html">Khăn ướt</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="HTML/mieng_lot.html">Miếng lót</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="d-flex align-items-center">
+
+                <input class="form-control me-2 w-100 w-sm-100" placeholder="Tìm kiếm" type="text" />
+                <!-- <input class="form-control me-2 d-none d-sm-block" placeholder="Tìm kiếm" type="text" /> -->
+                <input class="form-control me-2 w-100 d-block d-sm-none" placeholder="Tìm kiếm" type="text" />
+                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                <a href="HTML/dang_nhap.html" class="text-dark ms-2"><i class="fas fa-user"></i></a>
+                <a href="HTML/danh_sach_dang_ky.html" class="text-dark ms-2"><i class="fas fa-users"></i></a>
+                <a href="#" class="text-dark ms-2" id="cart-toggle"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hinh anh trang chu -->
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        x
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMAGE/banner3.png" alt="banner1" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGE/banner2.webp" alt="banner2" class="img-fluid">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <main class="container py-5">
+        <!-- Modal hiển thị chi tiết sản phẩm -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="productModalBody">
+                        <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-5">
+            <hr class="flex-grow-1 mx-3">
+            <h2 class="text-center fw-bold fade-in">GIÁ ƯU ĐÃI</h2>
+            <hr class="flex-grow-1 mx-3">
+        </div>
+        <div class="row">
+
+            <!-- Sản phẩm 5 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabot/1.webp" alt="Ensure" data-name="Ensure" data-price="876000" data-description="Sữa Ensure Gold StrengthPro hương vani 800g là công thức dinh dưỡng đầy đủ và cân đối.
+
+                Với hơn 30 nghiên cứu khoa học trong suốt 50 năm có mặt, Ensure được chứng minh lâm sàng giúp phục hồi và tăng cường sức khỏe, tăng cường miễn dịch và chất lượng cuộc sống. Ensure Gold mới với hệ dưỡng chất StrengthPro gồm HMB, YBG và nhiều dưỡng chất khác."
+                    data-category="sua_bot" />
+                <p class="mt-2">Sữa Abbott Ensure Gold 800g (Beta Glucan) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">990,000 đ</s>
+                        <span class="fw-bold text-danger">876,000đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-13%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabot/2.webp" alt="Ensure" data-name="Ensure" data-price="876000" data-description="Sữa Ensure Gold StrengthPro hương vani ít ngọt 800g là công thức dinh dưỡng đầy đủ và cân đối.
+
+                Với hơn 30 nghiên cứu khoa học trong suốt 50 năm có mặt, Ensure được chứng minh lâm sàng giúp phục hồi và tăng cường sức khỏe, tăng cường miễn dịch và chất lượng cuộc sống. Ensure Gold mới với hệ dưỡng chất StrengthPro gồm HMB, YBG và nhiều dưỡng chất khác."
+                    data-category="sua_bot" />
+                <p class="mt-2">Abbott Ensure Gold ít ngọt Vanilla 800g ( Beta Glucan) mẫu mới</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">990,000 đ</s>
+                        <span class="fw-bold text-danger">876,000đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-13%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotsinhhoc/3.webp" alt="RONTAMIL" data-name="Rontamil" data-price="550000" data-description="Sản phẩm dinh dưỡng công thức Rontamil Plus 3 dành cho trẻ từ 12-36 tháng tuổi, là sản phẩm thuộc tập đoàn Dreavia AG, đứng đầu trong nghiên cứu sản xuất và cung cấp sản phẩm chất lượng vượt trội từ Châu Âu. Dreavia AG được thành lập từ năm 1986, nhà máy sản xuất đạt được nhiều chứng nhận quan trọng cao nhất thị trường Châu Âu trong ngành sản xuất sản phẩm dinh dưỡng như IFS6, HACCP, ISO. Ngoài ra các sản phẩm của Dreavia AG được khách hàng đánh giá cao và tin dùng ở nhiều quốc gia trên toàn thế giới."
+                    data-category="suabot_sh" />
+                <p class="mt-2">Rontamil Plus 3 800g cho bé 1-3 tuổi</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">660,000 đ</s>
+                        <span class="fw-bold text-danger">550,000đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-20%</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotsinhhoc/4.webp" alt="RONTAMIL" data-name="Rontamil" data-price="550000" data-description="Sản phẩm dinh dưỡng công thức Rontamil Plus 2 dành cho trẻ từ 6-12 tháng tuổi, là sản phẩm thuộc tập đoàn Dreavia AG, đứng đầu trong nghiên cứu sản xuất và cung cấp sản phẩm chất lượng vượt trội từ Châu Âu. Dreavia AG được thành lập từ năm 1986, nhà máy sản xuất đạt được nhiều chứng nhận quan trọng cao nhất thị trường Châu Âu trong ngành sản xuất sản phẩm dinh dưỡng như IFS6, HACCP, ISO. Ngoài ra các sản phẩm của Dreavia AG được khách hàng đánh giá cao và tin dùng ở nhiều quốc gia trên toàn thế giới."
+                    data-category="suabot_sh" />
+                <p class="mt-2">Rontamil Plus 2 800g cho bé 6-12 tháng</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">660,000 đ</s>
+                        <span class="fw-bold text-danger">550,000đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-20%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 1 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotnhapkhau/4.webp" alt="1" data-name="Nutri Pro Active" data-price="720000" data-description="Sữa bột Rontameal Nutri Pro Active 800g
+                Rontameal Nutri-pro ACTIVE 800g là sản phẩm của tập đoàn Dreavia. Được nhập khẩu nguyên hộp từ Pháp.
+                Công thức được nghiên cứu bởi các chuyên gia hàng đầu dinh dưỡng tại Châu Âu." data-category="sua_bot_nk" />
+                <p class="mt-2">Sữa bột Rontameal Nutri Pro Active 800g</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">864,000 đ</s>
+                        <span class="fw-bold text-danger">720,000đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-20%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotphasan/1.webp" alt="1" data-name="Sữa Pha Sẵn GrowPlus+ " data-price="74100" data-description="Sữa Pha Sẵn Grow Plus Colos Immunel HG 180ml hương vị thơm ngon, dễ uống tối ưu cho thể trạng và nhu cầu dinh dưỡng đặc thù của trẻ em Việt Nam. Công thức bộ ba dưỡng chất bảo vệ với Immunel từ Mỹ, kết hợp 100% sữa non 24h chứa kháng thể IgG và 2’-FL HMO, hỗ trợ tăng cường đề kháng, cho bé khỏe mạnh.
+                " data-category="sua_bot_ps" />
+                <p class="mt-2">Sữa Pha Sẵn GrowPlus+ Colos Immunel HG 180ml </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">78,000 đ</s>
+                        <span class="fw-bold text-danger">74,100đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-5%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotphasan/2.webp" alt="1" data-name="Sữa Pha Sẵn GrowPlus+ " data-price="66500" data-description="Sữa Pha Sẵn GrowPlus+ Height Boosting HG 180ml hương vị thơm ngon, dễ uống tối ưu cho thể trạng và nhu cầu dinh dưỡng đặc thù của trẻ em Việt Nam. Công thức bộ ba dưỡng chất bảo vệ với Immunel từ Mỹ, kết hợp 100% sữa non 24h chứa kháng thể IgG và 2’-FL HMO, hỗ trợ tăng cường đề kháng, cho bé khỏe mạnh.
+                " data-category="sua_bot_ps" />
+                <p class="mt-2">Sữa Pha Sẵn GrowPlus+ Height Boosting HG 180ml </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">70,000 đ</s>
+                        <span class="fw-bold text-danger">66,500đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-5%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotphasan/3.webp" alt="1" data-name="Sữa Pha Sẵn GrowPlus+ " data-price="55100" data-description="Sữa uống dinh dưỡng Growplus+ Vàng sữa non 1+ 180ML (1-2 tuổi) hương vị thơm ngon, dễ uống tối ưu cho thể trạng và nhu cầu dinh dưỡng đặc thù của trẻ em Việt Nam. Công thức bộ ba dưỡng chất bảo vệ với Immunel từ Mỹ, kết hợp 100% sữa non 24h chứa kháng thể IgG và 2’-FL HMO, hỗ trợ tăng cường đề kháng, cho bé khỏe mạnh.
+                " data-category="sua_bot_ps" />
+                <p class="mt-2">Sữa uống dinh dưỡng Growplus+ Vàng sữa non 1+ 180ML (1-2 tuổi) </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">58,000 đ</s>
+                        <span class="fw-bold text-danger">55,100đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-5%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 8 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotphasan/4.webp" alt="1" data-name="Sữa Pha Sẵn GrowPlus+ " data-price="55100" data-description="Sữa bột pha sẵn GrowPLUS+ Vàng trên 2 tuổi - Sữa non tăng đề kháng 180ml hương vị thơm ngon, dễ uống tối ưu cho thể trạng và nhu cầu dinh dưỡng đặc thù của trẻ em Việt Nam. Công thức bộ ba dưỡng chất bảo vệ với Immunel từ Mỹ, kết hợp 100% sữa non 24h chứa kháng thể IgG và 2’-FL HMO, hỗ trợ tăng cường đề kháng, cho bé khỏe mạnh.
+                " data-category="sua_bot_ps" />
+                <p class="mt-2">Sữa bột pha sẵn GrowPLUS+ Vàng trên 2 tuổi - Sữa non tăng đề kháng 180ml</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">58,000 đ</s>
+                        <span class="fw-bold text-danger">55,100đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-5%</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="d-flex align-items-center my-5">
+            <hr class="flex-grow-1 mx-3">
+            <h2 class="fw-bold text-center fade-in">SẢN PHẨM BÁN CHẠY</h2>
+            <hr class="flex-grow-1 mx-3">
+        </div>
+
+
+        <div class="row">
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotsinhhoc/3.webp" alt="RONTAMIL" data-name="Rontamil" data-price="550000" data-description="Sản phẩm dinh dưỡng công thức Rontamil Plus 3 dành cho trẻ từ 12-36 tháng tuổi, là sản phẩm thuộc tập đoàn Dreavia AG, đứng đầu trong nghiên cứu sản xuất và cung cấp sản phẩm chất lượng vượt trội từ Châu Âu. Dreavia AG được thành lập từ năm 1986, nhà máy sản xuất đạt được nhiều chứng nhận quan trọng cao nhất thị trường Châu Âu trong ngành sản xuất sản phẩm dinh dưỡng như IFS6, HACCP, ISO. Ngoài ra các sản phẩm của Dreavia AG được khách hàng đánh giá cao và tin dùng ở nhiều quốc gia trên toàn thế giới."
+                    data-category="suabot_sh" />
+                <p class="mt-2">Rontamil Plus 3 800g cho bé 1-3 tuổi</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="price mb-0">
+                        <s class="text-muted">660,000 đ</s>
+                        <span class="fw-bold text-danger">550,000đ</span>
+                    </p>
+                    <span class="badge bg-danger text-white p-2 ms-2">-20%</span>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabot/8.webp" alt="Bimbosan" data-name="Binbosan" data-price="610000" data-description="Bimbosan Stage 4 tự hào là sản phẩm tiên phong áp dụng công nghệ tiên tiến Phun sấy khép kín một lần từ nguyên liệu sữa bò tươi hữu cơ vào sản xuất, giúp giữ trọn giá trị dinh dưỡng tự nhiên nhất, hỗ trợ hấp thu tối đa.
+
+                Sản phẩm được phát triển từ năm 1932 tại Thụy Sĩ, với hơn 92 năm kinh nghiệm và không ngừng nghiên cứu cải tiến công thức giúp trẻ phát triển toàn diện thể chất lẫn tinh thần. Sản phẩm thuộc tập đoàn Hochdoft Thụy Sĩ, chuyên sản xuất các sản phẩm dinh dưỡng cao cấp dành cho trẻ nhỏ và người lớn."
+                    data-category="sua_bot" />
+                <p class="mt-2">Sữa bột Bimbosan 4 Junior milk 900g</p>
+                <p class="fw-bold">610,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-md-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotphasan/6.webp" alt="2" data-name="Sữa uống Ensure Vanilla 237ml" data-price="41000" data-description="
+                Sữa Ensure Vanilla 237ml chứa công thức dinh dưỡng đầy đủ và cân đối. Sản phẩm chứa Protein, Prebiotics, Antioxidants cùng 24 loại Vitamin và khoáng chất thiết yếu, giúp hồi phục và duy trì một cơ thể khỏe mạnh. Sản phẩm có thể thay thế cho bữa ăn nhẹ, thích hợp với người ốm, người suy dinh dưỡng hoặc làm việc nhiều, người ăn uống kém, người bệnh cần hồi phục nhanh.."
+                    data-category="sua_bot_ps" />
+                <p class="mt-2">Sữa uống Ensure Vanilla 237ml</p>
+                <p class="fw-bold">41,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 8 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotnhapkhau/1.webp" alt="2" data-name="Lacsure" data-price="788000 đ" data-description="LACSURE 800g là sản phẩm của tập đoàn OPKO Health Hoa Kỳ. Được nhập khẩu nguyên hộp từ Tây Ban Nha. Công thức được nghiên cứu bởi các chuyên gia hàng đầu dinh dưỡng tại Châu Âu. Lacsure là thực phẩm bổ sung cao năng lượng dành cho người trưởng thành, trung niên, người cao tuổi, người bệnh cần phục hồi sức khỏe, người có nhu cầu bổ sung dinh dưỡng."
+                />
+                <p class="mt-2">Sữa bột Lacsure 800g</p>
+                <p class="fw-bold">788,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/binhsua/binh-hoa-160ml.webp" alt="1" data-name="Bình sữa Pigeon " data-price="295000" data-description="Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml, hình Hoa phù hợp với bé từ 0 tháng tuổi. Sản phẩm được làm từ chất liệu cao cấp, an toàn và thiết kế tiện dụng cho bé dễ cầm nắm. "
+                    height="295px" width="295px" />
+                <p class="mt-2">Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml hình Hoa</p>
+                <p class="fw-bold">295,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotnhapkhau/5.webp" alt="2" data-name="Sữa bột Meiji" data-price="438000 đ" data-description="Sữa bột Meiji 1-3 year old Growing Up Formula 800g phù hợp cho trẻ từ 1-3 tuổi, không chỉ chứa các chất dinh dưỡng cơ bản như protein, chất béo, carbohydrat mà còn có các vitamin và khoáng chất rất khó có được từ sữa bò và thức ăn dạng rắn. Meiji còn bổ sung cả axit docosahexaenoic (DHA), các nucleotides và đặc biệt là hệ cân bằng Omega 3, Omega 6 giúp thúc đẩy sự phát triển toàn diện cả về thể chất lẫn não bộ của trẻ trong suốt giai đoạn thơ ấu."
+                />
+                <p class="mt-2">Sữa bột Meiji 1-3 year old Growing Up Formula 800g (nhập khẩu)</p>
+                <p class="fw-bold">438,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabotnhapkhau/6.webp" alt="2" data-name="Sữa bột Meiji" data-price="495000 đ" data-description="Sữa bột Meiji 0-1 year old Infant Formula 800g dưới đây dành cho bé từ 0-1 tuổi được sản xuất dưới sự quản lý vệ sinh và chất lượng chặt chẽ tại nhà máy đã được cấp chứng nhận ISO9001, sử dụng các thiết bị hoàn toàn tự động để sản xuất sữa và đóng hộp sẽ là lựa chọn an tâm cho mẹ. Các thành phần dinh dưỡng trong sữa không chỉ cung cấp nguồn dinh dưỡng một cách tự nhiên cho bé mà còn hỗ trợ bé phát triển trí não, tăng cường sức đề kháng trong giai đoạn non nớt đầu đờ"
+                />
+                <p class="mt-2">Sữa bột Meiji 0-1 year old Infant Formula 800g (nhập khẩu)</p>
+                <p class="fw-bold">495,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 8 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="IMAGE/suabot/3.png" alt="Similac" data-name="Similac" data-price="830000" data-description="Similac 1+ cho trẻ 1- 2 tuổi
+                Dựa trên kinh nghiệm hơn 95 năm trong nghiên cứu và phát triển các sản phẩm dinh dưỡng nhi, Similac mới với hệ dưỡng chất Prodi-G và 5 HMOs giúp phát triển não bộ, tăng cường sức đề kháng và hệ tiêu hóa khỏe mạnh" data-category="sua_bot"
+                />
+                <p class="mt-2">Sữa bột Similac (Gangliosides) 1+ 1,6kg từ 1-2 tuổi</p>
+                <p class="fw-bold">830,000 đ</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Giỏ hàng -->
+    <div class="cart" id="cart">
+        <div class="cart-header pt-2">
+            <h5>Giỏ Hàng</h5>
+            <button class="btn-close" id="cart-close"></button>
+        </div>
+        <div class="cart-body" id="cart-body">
+            <p class="cart-empty pt-2">Giỏ hàng của bạn trống.</p>
+        </div>
+        <div class="cart-footer">
+            <strong>Tổng: <span id="cart-total">0</span> đ</strong>
+            <button class="btn btn-primary float-end" id="checkout-btn">
+                Thanh toán
+            </button>
+        </div>
+    </div>
+
+
+    <footer class="bg-danger text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="fw-bold">The Gioi Sua</h3>
+                    <p>
+                        <strong>The Gioi Sua</strong> là thương hiệu sữa bột hàng đầu tại Việt Nam, chuyên cung cấp các sản phẩm sữa bột chất lượng cao cho trẻ em và người lớn. Chúng tôi cam kết mang đến những sản phẩm tốt nhất với giá cả hợp lý nhất.
+                    </p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP.HCM</p>
+                    <p><i class="fas fa-phone me-2"></i> 0839 666 888</p>
+                    <p><i class="fas fa-envelope me-2"></i> support@thegioisua.vn</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Hỗ Trợ Khách Hàng</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="#"><i class="fas fa-shield-alt me-2"></i> Chính sách bảo
+                                hành</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-exchange-alt me-2"></i> Chính sách đổi
+                                trả</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-shipping-fast me-2"></i> Chính sách vận
+                                chuyển</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-question-circle me-2"></i> Câu hỏi thường
+                                gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Kết Nối Với Chúng Tôi</h3>
+                    <div class="d-flex">
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white fs-4" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top pt-2 text-center">
+                <p class="mb-0 fst-italic">© 2025 The Gioi Sua. All rights reserved. | Thiết kế bởi Nguyễn Gia Thịnh 23677911 - Bài Tập Lớn Hệ thống Công nghệ Web
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal cảnh báo -->
+    <!-- <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-exclamation-triangle text-danger fs-1 mb-3"></i>
+                    <h4 class="text-danger">Vui lòng chọn đầy đủ màu và size trước khi tiếp tục!</h4>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Modal thông báo -->
+    <div class="modal fade" id="cartNotification" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                    <h4>Thêm vào giỏ hàng thành công!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thêm sau modal cảnh báo -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                    <h4 class="text-success mb-3">Thanh toán thành công!</h4>
+                    <p>Cảm ơn bạn đã mua hàng tại The Gioi Sua</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal thông báo giỏ hàng trống -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Thông báo</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Chưa có sản phẩm trong giỏ hàng!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trong phần modal thanh toán -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác nhận đơn hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Thông tin sản phẩm:</h6>
+                            <div id="checkout-items"></div>
+                            <hr>
+                            <h6>Tổng cộng: <span id="checkout-total">0</span> đ</h6>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h6>Thông tin thanh toán:</h6>
+                            <form id="paymentForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Họ tên</label>
+                                    <input type="text" class="form-control" id="checkoutFullname" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="checkoutAddress" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Số điện thoại</label>
+                                    <input type="tel" class="form-control" id="checkoutPhone" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Phương thức thanh toán</label>
+                                    <select class="form-select" id="checkoutPayment" required>
+                                        <option value="">Chọn phương thức</option>
+                                        <option>COD</option>
+                                        <option>Chuyển khoản</option>
+                                        <option>Ví điện tử</option>
+                                    </select>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" form="paymentForm">Xác nhận thanh toán</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

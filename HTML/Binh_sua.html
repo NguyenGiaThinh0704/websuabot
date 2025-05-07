@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../FAVICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="../FAVICON/site.webmanifest">
+    <title>Binh Sua</title>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/css.css" />
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/js.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top border-bottom bg-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3 px-4">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          ☰
+        </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../IMAGE/logo.png" alt="Logo" class="logo" height="50" />
+                </a>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/gia_uu_dai.html">GIÁ ƯU ĐÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot.html">SỮA BỘT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="suabot_sh.html">SỮA BỘT SINH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot_nk.html">SỮA BỘT NHẬP KHẨU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sua_bot_ps.html">SỮA BỘT PHA SẴN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="san_pham_ban_chay.html">SẢN PHẨM BÁN CHẠY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu">PHỤ
+                                KIỆN</a>
+                            <div id="submenu" class="collapse">
+                                <a class="nav-link" href="Binh_sua.html">Bình sữa</a>
+                                <a class="nav-link" href="Tingam_tigia.html">Ti ngậm - ti giả</a>
+                                <a class="nav-link" href="khan_uot.html">Khăn ướt</a>
+                                <a class="nav-link" href="mieng_lot.html">Miếng Lót</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light w-100 d-none d-lg-block">
+                <div class="container-fluid">
+                    <ul class="navbar-nav d-flex flex-row justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="gia_uu_dai.html">GIÁ ƯU ĐÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="sua_bot.html">SỮA BỘT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="suabot_sh.html">SỮA BỘT SINH HỌC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="sua_bot_nk.html">SỮA BỘT NHẬP KHẨU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="sua_bot_ps.html">SỮA BỘT PHA SẴN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="san_pham_ban_chay.html">SẢN PHẨM BÁN CHẠY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-3" href="#" data-bs-toggle="dropdown">PHỤ KIỆN</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Binh_sua.html">Bình sữa</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="tingam_tigia.html">Ti ngậm - ti giả</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="khan_uot.html">Khăn ướt</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mieng_lot.html">Miếng lót</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="d-flex align-items-center">
+
+                <input class="form-control me-2 w-100 w-sm-100" placeholder="Tìm kiếm" type="text" />
+                <input class="form-control me-2 w-100 d-block d-sm-none" placeholder="Tìm kiếm" type="text" />
+                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+                <a href="dang_nhap.html" class="text-dark ms-2"><i class="fas fa-user"></i></a>
+                <a href="danh_sach_dang_ky.html" class="text-dark ms-2"><i class="fas fa-users"></i></a>
+                <a href="#" class="text-dark ms-2" id="cart-toggle"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5" style="margin-top: 80px">
+        <!-- Modal hiển thị chi tiết sản phẩm -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title w-100 text-center" id="productModalLabel">
+                            Thông tin sản phẩm
+                        </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="productModalBody">
+                        <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-4">
+            <hr class="flex-grow-1 mx-3" />
+            <h2 class="text-center fw-bold fade-in">BÌNH SỮA</h2>
+            <hr class="flex-grow-1 mx-3" />
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-filter"></i>
+                <span class="ms-2">BỘ LỌC</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="me-2">Sắp xếp theo:</span>
+                <select class="form-select w-auto">
+          <option value="default">Chọn tiêu chí</option>
+          <option value="price-asc">Giá thấp đến cao</option>
+          <option value="price-desc">Giá cao đến thấp</option>
+          <option value="name-asc">Tên A → Z</option>
+          <option value="name-desc">Tên Z → A</option>
+          <option value="newest">Mới nhất</option>
+          <option value="bestseller">Bán chạy nhất</option>
+          <option value="discount">Giảm giá nhiều nhất</option>
+        </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sản phẩm 1 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/binhsua/binh-hoa-160ml.webp" alt="1" data-name="Bình sữa Pigeon " data-price="295000" data-description="Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml, hình Hoa phù hợp với bé từ 0 tháng tuổi. Sản phẩm được làm từ chất liệu cao cấp, an toàn và thiết kế tiện dụng cho bé dễ cầm nắm. "
+                    height="295px" width="295px" />
+                <p class="mt-2">Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml hình Hoa</p>
+                <p class="fw-bold">295,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="col-lg-3 col-6 border p-3 product-item">
+                <img class="img-fluid product-image fade-scale" src="../IMAGE/binhsua/2.webp" alt="2" data-name="Bình sữa Pigeon " data-price="102000" data-description="Đến từ thương hiệu Pigeon với các sản phẩm chăm sóc mẹ và bé nhận được sự tin tưởng của các bà mẹ trên toàn thế giới, bình sữa Pigeon Streamline PP 250ml sẽ là sự lựa chọn hoàn hảo của mẹ cho bé trong những năm tháng đầu đời. Thiết kế thân bình dài dễ dàng cầm nắm cùng cấu tạo núm ty thông minh mang đến cho bé sự thoải mái và thích thú trong suốt giai đoạn bú bình. Chất liệu cao cấp, tuyệt đối an toàn với sức khỏe cũng là một ưu điểm nổi bật của bình sữa Pigeon khiến mẹ an tâm cho bé sử dụng mỗi ngày."
+                    hight="295px" width="295px " />
+                <p class="mt-2 ">Bình sữa Pigeon PP Streamline 250ml </p>
+                <p class="fw-bold ">102,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="col-lg-3 col-6 border p-3 product-item ">
+                <img class="img-fluid product-image fade-scale " src="../IMAGE/binhsua/3.webp " alt="3 " data-name="Bình sữa Pigeon " data-price="295000 " data-description="Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml, hình Gấu ﻿phù hợp với bé từ 0 tháng tuổi.
+                    Sản phẩm được làm từ chất liệu cao cấp, an toàn và thiết kế tiện dụng cho bé dễ cầm nắm. " hight="295px" width=" 295px " />
+                <p class="mt-2 ">Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml, hình Gấu </p>
+
+                <p class="fw-bold ">295,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="col-lg-3 col-6 border p-3 product-item ">
+                <img class="img-fluid product-image fade-scale " src="../IMAGE/binhsua/4.webp " alt="4 " data-name="Bình sữa Pigeon  " data-price="177000 " data-description="Bình sữa Pigeon PP Plus WN3 240ml (M) được nâng cấp với nhiều tính năng nổi bật. Trong đó,
+                    khớp ngậm là 1 tính năng đặc sắc nhất giúp bé ti đúng và thoải mái. Núm ty của bình sữa Pigeon thế hệ III so với các thế trước còn mềm mại hơn, gần giống với ti mẹ hơn. Chống đau bụng, đầy hơi với hệ thống van thông khí AVS tiên tiến,
+                    giảm lượng không khí nuốt vào khi bé bú sữa. " hight="295px" width="295px " />
+                <p class="mt-2 ">Bình sữa Pigeon PP Plus WN3 240ml (M) </p>
+                <p class="fw-bold ">177,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 5 -->
+            <div class="col-lg-3 col-6 border p-3 product-item ">
+                <img class="img-fluid product-image fade-scale " src="../IMAGE/binhsua/5.webp " alt="5 " data-name="Bình sữa Pigeon  " data-price="185000 " data-description="Bình sữa Pigeon PP Plus WN3 240ml (M) được nâng cấp với nhiều tính năng nổi bật. Trong đó,
+                    khớp ngậm là 1 tính năng đặc sắc nhất giúp bé ti đúng và thoải mái. Núm ty của bình sữa Pigeon thế hệ III so với các thế trước còn mềm mại hơn, gần giống với ti mẹ hơn. Chống đau bụng, đầy hơi với hệ thống van thông khí AVS tiên tiến,
+                    giảm lượng không khí nuốt vào khi bé bú sữa. " hight="295px" width="295px " />
+                <p class="mt-2 ">Bình sữa Pigeon PP Plus WN3 330ml (L) </p>
+                <p class="fw-bold ">185,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="col-lg-3 col-6 border p-3 product-item ">
+                <img class="img-fluid product-image fade-scale " src="../IMAGE/binhsua/6.webp " alt="6 " data-name="Bình sữa Pigeon  " data-price="319000 " data-description="Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 160ml, hình Hoa phù hợp với bé từ 0 tháng tuổi.
+                    Sản phẩm được làm từ chất liệu cao cấp, an toàn và thiết kế tiện dụng cho bé dễ cầm nắm. " height="295px " width="295px " />
+                <p class="mt-2 ">Bình sữa Pigeon PPSU Plus WN3 phiên bản Nhật 240ml hình Hoa</p>
+                <p class="fw-bold ">319,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="col-lg-3 col-6 border p-3 product-item ">
+                <img class="img-fluid product-image fade-scale " src="../IMAGE/binhsua/7.webp " alt="7 " data-name="Bình sữa Pigeon  " data-price="306000 " data-description="Bình sữa PPSU Plus WN3 240ml Nhật Bản được thiết kế thông minh, nổi bật của bình sữa Pigeon
+                    Softouch thế hệ III " height="295px " width="295px " />
+                <p class="mt-2 ">Bình sữa Pigeon PPSU Plus WN3 240ml Nhật</p>
+                <p class="fw-bold ">306,000 đ</p>
+            </div>
+
+            <!-- Sản phẩm 8 -->
+            <div class="col-lg-3 col-6 border p-3 product-item ">
+                <img class="img-fluid product-image fade-scale " src="../IMAGE/binhsua/8.webp " alt="8 " data-name="Bình sữa Comotomo " data-price="315000 " data-description="Bình sữa Comotomo Xanh 250ml với chất liệu silicone cao cấp, được sản xuất trên công nghệ
+                    hiện đại của Mỹ và Hàn Quốc mang những tính năng thật nổi trội. Cả thân bình và núm ty đều được làm từ 100% silicone cao cấp an toàn cho sức khỏe của trẻ sơ sinh. Thiết kế thông minh của bình sữa Comotomo được thể hiện ở đặc điểm van thông
+                    khí chống sặc, chống đầy hơi cho bé cùng đầu ty có ngấn cho bé cảm giác thoải mái khi bú bình. Bình sữa Comotomo Xanh 250ml sẽ là lựa chọn hoàn hảo của mẹ cho bé, giúp chăm sóc sức khỏe bé tốt nhất trong những năm tháng đầu đời.
+                    " hight="295px" width="295px " />
+                <p class="mt-2 ">Bình sữa Comotomo Xanh 250ml cổ rộng </p>
+                <p class="fw-bold ">315,000 đ</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Giỏ hàng -->
+    <!-- Giỏ hàng -->
+    <div class="cart" id="cart">
+        <div class="cart-header pt-2">
+            <h5>Giỏ Hàng</h5>
+            <button class="btn-close" id="cart-close"></button>
+        </div>
+        <div class="cart-body" id="cart-body">
+            <p class="cart-empty pt-2">Giỏ hàng của bạn trống.</p>
+        </div>
+        <div class="cart-footer">
+            <strong>Tổng: <span id="cart-total">0</span> đ</strong>
+            <button class="btn btn-primary float-end" id="checkout-btn">
+    Thanh toán
+  </button>
+        </div>
+    </div>
+
+    <footer class="bg-danger text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="fw-bold">The Gioi Sua</h3>
+                    <p>
+                        <strong>The Gioi Sua</strong> là thương hiệu sữa bột hàng đầu tại Việt Nam, chuyên cung cấp các sản phẩm sữa bột chất lượng cao cho trẻ em và người lớn. Chúng tôi cam kết mang đến những sản phẩm tốt nhất với giá cả hợp lý nhất.
+                    </p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP.HCM</p>
+                    <p><i class="fas fa-phone me-2"></i> 0839 666 888</p>
+                    <p><i class="fas fa-envelope me-2"></i> support@thegioisua.vn</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Hỗ Trợ Khách Hàng</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="#"><i class="fas fa-shield-alt me-2"></i> Chính sách bảo
+                          hành</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-exchange-alt me-2"></i> Chính sách đổi
+                          trả</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-shipping-fast me-2"></i> Chính sách vận
+                          chuyển</a></li>
+                        <li><a class="text-white" href="#"><i class="fas fa-question-circle me-2"></i> Câu hỏi thường
+                          gặp</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="fw-bold">Kết Nối Với Chúng Tôi</h3>
+                    <div class="d-flex">
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-white me-3 fs-4" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white fs-4" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top pt-2 text-center">
+                <p class="mb-0 fst-italic">© 2025 The Gioi Sua. All rights reserved. | Thiết kế bởi Nguyễn Gia Thịnh 23677911 - Bài Tập Lớn Hệ thống Công nghệ Web
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal thông báo -->
+    <div class="modal fade" id="cartNotification" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                    <h4>Thêm vào giỏ hàng thành công!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal thông báo giỏ hàng trống -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Thông báo</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Chưa có sản phẩm trong giỏ hàng!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thêm sau modal cảnh báo -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                    <h4 class="text-success mb-3">Thanh toán thành công!</h4>
+                    <p>Cảm ơn bạn đã mua hàng tại The Gioi Sua</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Trong phần modal thanh toán -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác nhận đơn hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Thông tin sản phẩm:</h6>
+                            <div id="checkout-items"></div>
+                            <hr>
+                            <h6>Tổng cộng: <span id="checkout-total">0</span> đ</h6>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h6>Thông tin thanh toán:</h6>
+                            <form id="paymentForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Họ tên</label>
+                                    <input type="text" class="form-control" id="checkoutFullname" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="checkoutAddress" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Số điện thoại</label>
+                                    <input type="tel" class="form-control" id="checkoutPhone" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Phương thức thanh toán</label>
+                                    <select class="form-select" id="checkoutPayment" required>
+                <option value="">Chọn phương thức</option>
+                <option>COD</option>
+                <option>Chuyển khoản</option>
+                <option>Ví điện tử</option>
+              </select>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" form="paymentForm">Xác nhận thanh toán</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
